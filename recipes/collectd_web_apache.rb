@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: collectd
-# Recipe:: collectd_web
+# Recipe:: collectd_web_apache
 #
 # Copyright 2010, Atari, Inc
 #
