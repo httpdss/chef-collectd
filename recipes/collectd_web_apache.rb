@@ -19,7 +19,7 @@
 
 include_recipe "collectd"
 include_recipe "apache2"
-include_recipe "collectd_web"
+include_recipe "collectd::collectd_web"
 
 template "/etc/apache2/sites-available/collectd_web.conf" do
   source "collectd_web.conf.erb"
