@@ -45,3 +45,15 @@ bash "install_collectd_web" do
     rm collectd-web.tar.gz
   EOH
 end
+
+# <Plugin "rrdtool">
+#   DataDir "/var/lib/collectd/rrd"
+#   CacheFlush 120
+#   WritesPerSecond 50
+# </Plugin>
+
+collectd_plugin "rrdtool" do
+  options :data_dir => '/var/lib/collectd/rrd',
+          :cache_flush => 120,
+          :writes_per_second => 50
+end
